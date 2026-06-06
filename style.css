@@ -1,9 +1,3 @@
-/* ═══════════════════════════════════════════════════════════
-   KAVIYA S — PORTFOLIO  |  style.css
-   Theme: Deep Navy Editorial with Amber Gold Accents
-   ═══════════════════════════════════════════════════════════ */
-
-/* ─── VARIABLES ─────────────────────────────────────────── */
 :root {
   --bg:         #06080f;
   --bg2:        #090c16;
@@ -35,7 +29,7 @@
   --trans:      0.25s ease;
 }
 
-/* ─── RESET ─────────────────────────────────────────────── */
+/*  RESET  */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
@@ -51,13 +45,13 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
 
-/* ─── SCROLLBAR ──────────────────────────────────────────── */
+/* SCROLLBAR */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg2); }
 ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold); }
 
-/* ─── NOISE TEXTURE ──────────────────────────────────────── */
+/*  NOISE TEXTURE */
 .noise {
   position: fixed; inset: 0; z-index: 0; pointer-events: none;
   opacity: 0.025;
@@ -66,7 +60,7 @@ img { display: block; max-width: 100%; }
   background-size: 200px 200px;
 }
 
-/* ─── CURSOR ─────────────────────────────────────────────── */
+/*  CURSOR */
 .cursor, .cursor-follower {
   position: fixed;
   border-radius: 50%;
@@ -87,10 +81,10 @@ img { display: block; max-width: 100%; }
 .cursor.hover { transform: translate(-50%,-50%) scale(2); background: var(--gold2); }
 .cursor-follower.hover { width: 56px; height: 56px; border-color: rgba(240,165,0,0.3); }
 
-/* ─── CONTAINER ──────────────────────────────────────────── */
+/*  CONTAINER  */
 .container { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
 
-/* ─── NAVBAR ─────────────────────────────────────────────── */
+/*  NAVBAR     */
 #navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 500;
   display: flex; align-items: center; justify-content: space-between;
@@ -177,7 +171,7 @@ img { display: block; max-width: 100%; }
 }
 .mob-link:hover { color: var(--gold); padding-left: 8px; }
 
-/* ─── HERO ───────────────────────────────────────────────── */
+/*  HERO  */
 .hero {
   min-height: 100vh;
   display: flex; align-items: center;
@@ -263,7 +257,7 @@ img { display: block; max-width: 100%; }
   animation: fadeSlideIn 0.8s 0.4s ease both;
 }
 
-/* ─── BUTTONS ────────────────────────────────────────────── */
+/*  BUTTONS */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 12px 28px;
@@ -295,7 +289,7 @@ img { display: block; max-width: 100%; }
 }
 .btn-large { padding: 15px 36px; font-size: 0.95rem; }
 
-/* ─── HERO STATS ─────────────────────────────────────────── */
+/*  HERO STATS  */
 .hero-stats {
   display: flex; align-items: center;
   gap: 0;
@@ -341,7 +335,7 @@ img { display: block; max-width: 100%; }
   50% { opacity: 1; transform: scaleY(1); }
 }
 
-/* ─── SECTIONS ───────────────────────────────────────────── */
+/*  SECTIONS */
 .section { padding: 110px 0; position: relative; z-index: 1; }
 .section-alt { background: var(--bg2); }
 
@@ -361,14 +355,14 @@ img { display: block; max-width: 100%; }
 }
 .section-title em { font-style: italic; color: var(--gold); }
 
-/* ─── REVEAL ─────────────────────────────────────────────── */
+/*  REVEAL */
 .reveal {
   opacity: 0; transform: translateY(36px);
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal.in-view { opacity: 1; transform: none; }
 
-/* ─── ABOUT ──────────────────────────────────────────────── */
+/* ABOUT*/
 .about-grid {
   display: grid; grid-template-columns: 1.1fr 0.9fr;
   gap: 72px; align-items: start;
@@ -435,7 +429,7 @@ img { display: block; max-width: 100%; }
   color: var(--gold2);
 }
 
-/* ─── SKILLS ─────────────────────────────────────────────── */
+/*SKILLS */
 .skills-container {
   display: flex; flex-direction: column; gap: 28px;
 }
@@ -484,7 +478,7 @@ img { display: block; max-width: 100%; }
   transform: translateY(-1px);
 }
 
-/* ─── FILTER TABS ────────────────────────────────────────── */
+/*FILTER TABS  */
 .filter-tabs {
   display: flex; gap: 8px; flex-wrap: wrap;
   margin-bottom: 36px;
@@ -504,7 +498,7 @@ img { display: block; max-width: 100%; }
   color: var(--bg); font-weight: 600;
 }
 
-/* ─── PROJECTS ───────────────────────────────────────────── */
+/*PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -628,7 +622,7 @@ img { display: block; max-width: 100%; }
   display: none;
 }
 
-/* ─── EXPERIENCE ─────────────────────────────────────────── */
+/* EXPERIENCE */
 .timeline { position: relative; }
 .timeline-item {
   display: flex; gap: 32px; align-items: flex-start;
@@ -690,7 +684,7 @@ img { display: block; max-width: 100%; }
   border-radius: 100px; color: var(--text3);
 }
 
-/* ─── EDUCATION ──────────────────────────────────────────── */
+/* EDUCATION */
 .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
 
 .edu-card {
@@ -747,7 +741,7 @@ img { display: block; max-width: 100%; }
 .cert-name { font-size: 0.83rem; color: var(--text); font-weight: 500; }
 .cert-org { font-size: 0.72rem; color: var(--text3); margin-top: 2px; }
 
-/* ─── CONTACT ────────────────────────────────────────────── */
+/*  CONTACT */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
 .contact-intro {
   font-size: 1rem; color: var(--text2); line-height: 1.8;
@@ -783,7 +777,7 @@ img { display: block; max-width: 100%; }
 .contact-arrow { margin-left: auto; color: var(--text3); transition: color var(--trans), transform var(--trans); }
 .contact-row:hover .contact-arrow { color: var(--gold); transform: translateX(4px); }
 
-/* ─── FOOTER ─────────────────────────────────────────────── */
+/*  FOOTER */
 .footer {
   border-top: 1px solid var(--border);
   padding: 32px 0; position: relative; z-index: 1;
@@ -804,7 +798,7 @@ img { display: block; max-width: 100%; }
 }
 .footer-links a:hover { color: var(--gold); }
 
-/* ─── RESPONSIVE ─────────────────────────────────────────── */
+/*  RESPONSIVE*/
 @media (max-width: 1024px) {
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
   .edu-grid { grid-template-columns: 1fr; }
